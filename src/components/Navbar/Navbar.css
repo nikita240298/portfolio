@@ -1,0 +1,101 @@
+/* Responsive Navbar Styles */
+.Navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+    
+  }
+  
+  .logo {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    font-size: 18px;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  /* Burger Icon */
+  .burger-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Hover underline effect */
+  .nav-menu li {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .nav-menu li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #e66465, #9198e5);
+    transition: width 0.3s;
+    margin-top: 5px;
+  }
+  
+  .nav-menu li:hover::after,
+  .nav-menu .active::after {
+    width: 100%;
+  }
+  
+  .anchor-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Connect Button */
+  .nav-connect {
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #e66465, #9198e5);
+    transition: 0.3s;
+  }
+  
+  .nav-connect:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive for Mobile */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 80px;
+      right: -100%;
+      padding: 20px;
+      border-radius: 10px;
+      gap: 20px;
+    }
+  
+    .nav-menu.open {
+      right: 20px;
+    }
+  
+    .burger-icon {
+      display: block;
+    }
+  }
+  
