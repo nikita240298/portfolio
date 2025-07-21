@@ -1,11 +1,14 @@
 <<<<<<< HEAD
 # Nikita Gharjale — Portfolio
 
-This is my personal portfolio built using React + Vite.
+Welcome to my personal portfolio website! Built using **React** and **Vite**, this project showcases my skills, projects, resume, and contact information as a frontend developer.
 
-## About the stack
+## Tech stack
 
-This setup provides a minimal configuration to get React working in Vite with HMR and ESLint rules.
+-  React
+-  Vite
+-  HTML5, CSS3
+-  Bootstrap 5
 
 Two official plugins:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)
